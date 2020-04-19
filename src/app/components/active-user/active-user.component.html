@@ -1,0 +1,8 @@
+<section (click)="toggleDropdown()">
+    <div class='user-description'>
+        <p>Acting as:</p>
+        <p class='user-name'>{{activeUser.name}}</p>
+    </div>
+    <app-avatar-hover size=40 src='{{activeUser.img}}'></app-avatar-hover>
+    <app-select-user *ngIf='isShowDropdown'></app-select-user>
+</section>

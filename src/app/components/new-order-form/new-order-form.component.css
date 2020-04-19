@@ -1,0 +1,14 @@
+.new-order-form {
+    position: relative;
+    padding: 30px 10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.order-title-input {
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 97%;
+    margin-bottom: 20px;
+}

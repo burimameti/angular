@@ -1,0 +1,24 @@
+<div class="order-list">
+    <h3>Decrypt an order:</h3>
+    <div class="paper">
+        <div class='empty-order-list' *ngIf='isEmptyOrderList'>
+            No orders sent yet.
+        </div>
+        <div (click)='toggleMessage(order)' *ngFor='let order of orders'>
+            <div class='order-row'>
+                <div class="order-row-left">
+                    <img class="message-avatar" src="assets/avatars/insignia.png" />
+                    <div class="order-description-text">
+                        <p class='todo-title'>{{order.title}}</p>
+                    </div>
+                </div>
+                <i class="far fa-eye eye-icon"></i>
+            </div>
+            <div class='decrypt-error' *ngIf='!order.message'>
+                <i class="fas fa-exclamation-triangle"></i>
+                You are not authorized to view decrypted message.
+            </div>
+            <p class="order-message" *ngIf='this.selectedMessage && this.selectedMessage === order.message'>{{order.message}}</p>
+        </div>
+    </div>
+</div>

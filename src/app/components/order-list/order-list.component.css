@@ -1,0 +1,102 @@
+.order-list {
+    padding: 30px 0;
+}
+
+.paper {
+    padding: 15px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    word-break: break-word;
+    border-radius: 2px;
+}
+
+.order-row {
+    align-items: center;
+    border-bottom: 1px solid #F2F2F2;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    justify-content: space-between;
+    padding: 15px 7px;
+    width: 500px;
+}
+
+.order-row:hover > .eye-icon {
+    display: block;
+}
+
+.eye-icon {
+    color: #BEBEBE;
+    display: none;
+    font-size: 20px;
+}
+
+.order-row-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-title {
+    color: #BDBDBD;
+    font-family: ProximaNova-Bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #000;
+    font-family: Monaco;
+    font-size: 12px;
+}
+
+.order-description-text {
+    align-content: center;
+    padding-left: 20px;
+}
+
+.empty-order-list {
+    align-items: center;
+    border: 1px dashed #ccc;
+    display: flex;
+    font-size: 18;
+    height: 235;
+    justify-content: center;
+    margin-top: 10;
+    padding: 20px 0;
+    font-family: Monaco;
+    font-size: 13px;
+    color: #CCC;
+}
+
+.message-avatar {
+    border-radius: 100%;
+    cursor: pointer;
+    height: 35px;
+    overflow: hidden;
+    width: 35px;
+}
+
+.order-message {
+    margin: 30px;
+}
+
+.decrypt-error {
+    background: #FDDC3B;
+    color: black;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    height: 235;
+    justify-content: center;
+    margin-top: 10;
+    padding: 20px 0;
+    font-family: Monaco;
+    font-size: 13px;
+}
+
+.fa-exclamation-triangle {
+    padding-right: 10px;
+}

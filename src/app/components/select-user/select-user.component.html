@@ -1,0 +1,13 @@
+<div class='dropdown'>
+    <div class='login-text'>Login As:</div>
+    <div class='dropdown-user' *ngFor='let user of users' (click)='selectUser(user)'>
+        <div class='user-info'>
+            <app-avatar-hover size=45 src='{{user.img}}'></app-avatar-hover>
+            <div class="user-text">
+                <div class='user-name'>{{user.name}}</div>
+                <div class='user-role'>{{user.role}}</div>
+            </div>
+        </div>
+        <i class='fas fa-chevron-right fa-2x chevron'></i>
+    </div>
+</div>
