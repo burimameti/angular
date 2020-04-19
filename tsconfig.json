@@ -6,8 +6,19 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "module": "esnext",
+    // "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "removeComments": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
@@ -17,7 +28,6 @@
     ]
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "disableTypeScriptVersionCheck": true
   }
 }
